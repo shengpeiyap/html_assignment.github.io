@@ -162,6 +162,61 @@ nav {
     line-height: 1.8;
 }
 
+/* About Us Section */
+.about-us, .our-mission, .our-team, .our-values {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 40px;
+    max-width: 1200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2, .our-mission h2, .our-team h2, .our-values h2 {
+    font-size: 2rem;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+/* Team Members */
+.our-team .team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.our-team .team-member {
+    text-align: center;
+    width: 30%;
+}
+
+.our-team .team-member img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.our-team .team-member h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.our-team .team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Values Section */
+.our-values ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.our-values li {
+    margin-bottom: 10px;
+}
+
 /* Footer Styling */
 footer {
     background-color: #333;
