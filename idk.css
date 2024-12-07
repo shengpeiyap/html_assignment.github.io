@@ -119,7 +119,7 @@ footer {
     padding: 10px;
     font-size: 0.9rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    position: relative; /* Change from 'fixed' to 'relative' */
+   /* position: relative;  Change from 'fixed' to 'relative' */
     width: 100%;
 }
 
