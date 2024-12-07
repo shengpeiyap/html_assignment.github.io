@@ -1,34 +1,43 @@
-/* General Styles for the Body */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header and Navigation Styles */
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
 header {
     background-color: #333;
-    padding: 10px 20px;
-    display: flex; /* Flexbox to align items horizontally */
-    justify-content: space-between; /* Space between title and navigation */
-    align-items: center; /* Vertically center the items */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: white;
+header h1 {
+    color: #fff;
+    font-size: 1.8rem;
     margin: 0;
-    font-size: 24px;
+    transition: color 0.3s ease;
 }
 
-h1:hover {
+header h1:hover {
     color: #5f5e59;
 }
 
-/* Navigation Styles */
+/* Navigation Styling */
 nav {
     display: flex;
-    justify-content: flex-end; /* Align nav items to the right */
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -47,6 +56,16 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #5f5e59;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
 }
 
 /* Hamburger Menu Styles */
@@ -65,7 +84,7 @@ nav {
 
 /* Responsive Design: Mobile Styles */
 @media (max-width: 768px) {
-    /* Hide navigation links by default */
+    /* Responsive Navigation Styling */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -75,14 +94,14 @@ nav {
         top: 60px;
         left: 0;
         padding: 10px 0;
+        z-index: 1000;
     }
-
     /* Show the hamburger menu icon */
     .menu-toggle {
         display: flex;
     }
 
-    /* Style for the individual list items in mobile view */
+    /* Style for individual list items in mobile view */
     .nav-links li {
         margin: 15px 0;
         text-align: center;
@@ -93,28 +112,67 @@ nav {
         color: white;
     }
 
-    /* When the menu is toggled (showing), display the navigation links */
+    /* Make nav-links visible when active */
     .nav-links.active {
         display: flex;
     }
 }
 
-/* Footer Styles */
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Main Content Styling */
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.main-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Footer Styling */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    padding: 10px;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
-header a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Set link color */
-}
-
-header a:hover {
-    color: #5f5e59; /* Change color when hovered */
+footer p {
+    margin: 0;
 }
