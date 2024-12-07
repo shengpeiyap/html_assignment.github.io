@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     margin: 0;
+    color: #333;
 }
 
 /* Header Styles */
@@ -43,6 +44,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
+    margin: 0;
 }
 
 .nav-links li {
@@ -60,18 +62,27 @@ nav {
     color: #5f5e59;
 }
 
-/* Hamburger Menu */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 /* Footer Styles */
@@ -93,35 +104,25 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* Hide nav links by default */
-    .nav-links {
-        display: none;
+    header {
         flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 10px 0;
-        z-index: 1000;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav-links li {
-        margin: 15px 0;
-        text-align: center;
+        margin: 10px 0;
     }
 
-    .nav-links a {
-        font-size: 1.2rem;
+    .hero h2 {
+        font-size: 2rem;
     }
 
-    /* Show hamburger menu */
-    .menu-toggle {
-        display: flex;
-    }
-
-    /* Active state for showing nav links */
-    .nav-links.active {
-        display: flex;
+    .hero p {
+        font-size: 1rem;
     }
 }
