@@ -3,62 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico">
-    <title>Pricing - House Cleaning Service</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="navigation.js" defer></script>
+    <title>Pricing</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><h1>House Cleaning Service</h1></a>
+        <h1>Our Pricing Plans</h1>
         <nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="basic-home-cleaning.html">Home Cleaning</a></li>
+                <li><a href="move-in-out-cleaning.html">Move In/Out Cleaning</a></li>
+                <li><a href="price.html" class="active">Pricing</a></li>
+                <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Pricing</h2>
-        <table>
-            <tr>
-                <th>Service</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Standard House Cleaning</td>
-                <td>$100</td>
-            </tr>
-            <tr>
-                <td>Deep Cleaning</td>
-                <td>$200</td>
-            </tr>
-            <tr>
-                <td>Move-in / Move-out Cleaning</td>
-                <td>$150</td>
-            </tr>
-            <tr>
-                <td>Post-Construction Cleaning</td>
-                <td>$250</td>
-            </tr>
-            <tr>
-                <td>Eco-friendly Cleaning</td>
-                <td>$180</td>
-            </tr>
-        </table>
-    </section>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Pricing Information</h2>
+        <p>Choose your cleaning service below to see the pricing details.</p>
+    </div>
+
+    <!-- Service Navigation -->
+    <div class="service-nav">
+        <ul>
+            <li><a href="basic-home-cleaning-prices.html" class="active">Basic Home Cleaning</a></li>
+            <li><a href="move-in-out-cleaning-prices.html">Move In/Out Cleaning</a></li>
+        </ul>
+    </div>
+
+    <!-- Pricing Content Section -->
+    <div id="home-cleaning" class="main-content">
+        <h3>Basic Home Cleaning</h3>
+
+        <!-- Home Cleaning Options -->
+        <div class="price-option">
+            <h4>On Demand</h4>
+            <p>Flexible cleaning as per your request. Ideal for one-time cleaning needs.</p>
+            <p>Price: $100</p>
+        </div>
+
+        <div class="price-option">
+            <h4>Weekly Session</h4>
+            <p>Regular weekly cleaning to keep your home fresh.</p>
+            <p>Price: $80 per week</p>
+        </div>
+
+        <div class="price-option">
+            <h4>Evening Session</h4>
+            <p>Cleaning services available in the evening for your convenience.</p>
+            <p>Price: $120</p>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 House Cleaning Service. All rights reserved.</p>
+        <p>© 2024 Cleaning Services. All rights reserved.</p>
     </footer>
 </body>
 </html>
