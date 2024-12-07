@@ -128,30 +128,30 @@ footer p {
     margin: 0;
 }
 
-/* Hide navigation links by default on small screens */
+/* Ensure nav-links are hidden by default */
 .nav-links {
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
     width: 100%;
     background-color: #333;
     position: absolute;
-    top: 60px; /* Adjust based on your header height */
+    top: 60px; /* Adjust based on header height */
     left: 0;
     padding: 10px 0;
     z-index: 1000;
 }
 
-/* Show navigation links when active */
+/* Make nav-links visible when active */
 .nav-links.active {
     display: flex;
 }
 
-/* Hamburger Menu Icon */
+/* Hamburger menu icon styling */
 .menu-toggle {
-    display: none;
+    display: none; /* Default to hidden */
     flex-direction: column;
-    cursor: pointer;
     gap: 5px;
+    cursor: pointer;
 }
 
 .menu-toggle .bar {
@@ -160,16 +160,14 @@ footer p {
     background-color: white;
 }
 
-/* Responsive Design */
+/* Responsive styling for small screens */
 @media (max-width: 768px) {
-    /* Show hamburger menu on small screens */
     .menu-toggle {
-        display: flex;
+        display: flex; /* Show hamburger menu */
     }
 
-    /* Ensure navigation links are hidden initially */
     .nav-links {
-        display: none;
+        display: none; /* Ensure hidden by default */
     }
 }
 
