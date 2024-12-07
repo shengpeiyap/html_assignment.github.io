@@ -1,5 +1,9 @@
-// Toggle the menu visibility when clicking the hamburger icon
-document.getElementById('mobile-menu').addEventListener('click', function() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    // Toggle 'active' class when menu button is clicked
+    menuToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+    });
 });
