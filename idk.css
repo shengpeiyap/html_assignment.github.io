@@ -152,13 +152,38 @@ footer p {
     background-color: #fff;
 }
 
-/* Responsive Design */
+/* Responsive Design: Mobile Styles */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex; /* Show hamburger menu */
+    /* Hide navigation links by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
     }
 
-    .nav-links {
-        display: none; /* Ensure hidden by default */
+    /* Show the hamburger menu icon */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Style for the individual list items in mobile view */
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        color: white;
+    }
+
+    /* When the menu is toggled (showing), display the navigation links */
+    .nav-links.active {
+        display: flex;
     }
 }
