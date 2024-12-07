@@ -140,7 +140,9 @@ footer p {
     margin: 0;
 }
 
-/* Responsive Navigation Styling */
+/* Responsive Design: Mobile Styles */
+@media (max-width: 768px) {
+    /* Responsive Navigation Styling */
 .nav-links {
     display: none;
     flex-direction: column;
@@ -157,9 +159,6 @@ footer p {
 .nav-links.active {
     display: flex;
 }
-
-/* Responsive Design: Mobile Styles */
-@media (max-width: 768px) {
     /* Show the hamburger menu icon */
     .menu-toggle {
         display: flex;
