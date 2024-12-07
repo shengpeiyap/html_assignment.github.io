@@ -82,6 +82,43 @@ nav {
     background-color: white;
 }
 
+/* Responsive Design: Mobile Styles */
+@media (max-width: 768px) {
+    /* Responsive Navigation Styling */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    /* Show the hamburger menu icon */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Style for individual list items in mobile view */
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        color: white;
+    }
+
+    /* Make nav-links visible when active */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -138,40 +175,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-/* Responsive Design: Mobile Styles */
-@media (max-width: 768px) {
-    /* Responsive Navigation Styling */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 10px 0;
-        z-index: 1000;
-    }
-    /* Show the hamburger menu icon */
-    .menu-toggle {
-        display: flex;
-    }
-
-    /* Style for individual list items in mobile view */
-    .nav-links li {
-        margin: 15px 0;
-        text-align: center;
-    }
-
-    .nav-links a {
-        font-size: 18px;
-        color: white;
-    }
-
-    /* Make nav-links visible when active */
-    .nav-links.active {
-        display: flex;
-    }
 }
