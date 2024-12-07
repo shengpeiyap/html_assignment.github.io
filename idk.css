@@ -62,6 +62,11 @@ nav {
     color: #5f5e59;
 }
 
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -82,6 +87,26 @@ nav {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Main Content Section */
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.main-content p {
+    font-size: 1rem;
     line-height: 1.8;
 }
 
@@ -124,5 +149,9 @@ footer p {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 15px;
     }
 }
