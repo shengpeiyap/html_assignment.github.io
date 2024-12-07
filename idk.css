@@ -10,11 +10,10 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    margin: 0;
     color: #333;
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
     background-color: #333;
     padding: 15px 20px;
@@ -35,7 +34,7 @@ header h1:hover {
     color: #5f5e59;
 }
 
-/* Navigation Styles */
+/* Navigation Styling */
 nav {
     display: flex;
     align-items: center;
@@ -45,10 +44,7 @@ nav {
     display: flex;
     list-style: none;
     margin: 0;
-}
-
-.nav-links li {
-    margin-left: 20px;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -90,12 +86,12 @@ nav {
     line-height: 1.8;
 }
 
-/* Main Content Section */
+/* Main Content Styling */
 .main-content {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -110,8 +106,7 @@ nav {
     line-height: 1.8;
 }
 
-/* Footer Styles */
-/* Footer Styles */
+/* Footer Styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -119,36 +114,33 @@ footer {
     padding: 10px;
     font-size: 0.9rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-   /* position: relative;  Change from 'fixed' to 'relative' */
     width: 100%;
 }
-
 
 footer p {
     margin: 0;
 }
 
-/* Ensure nav-links are hidden by default */
+/* Responsive Navigation Styling */
 .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
     background-color: #333;
     position: absolute;
-    top: 60px; /* Adjust based on header height */
+    top: 60px;
     left: 0;
     padding: 10px 0;
     z-index: 1000;
 }
 
-/* Make nav-links visible when active */
 .nav-links.active {
     display: flex;
 }
 
-/* Hamburger menu icon styling */
+/* Hamburger Menu Styling */
 .menu-toggle {
-    display: none; /* Default to hidden */
+    display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -157,10 +149,10 @@ footer p {
 .menu-toggle .bar {
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: #fff;
 }
 
-/* Responsive styling for small screens */
+/* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex; /* Show hamburger menu */
@@ -170,4 +162,3 @@ footer p {
         display: none; /* Ensure hidden by default */
     }
 }
-
