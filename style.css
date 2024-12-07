@@ -35,6 +35,10 @@ header h1:hover {
 }
 
 /* Navigation Styling */
+nav {
+    display: flex
+    align-items: center;
+}
 .nav-links {
     display: flex;
     list-style: none;
