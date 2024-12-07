@@ -263,3 +263,8 @@ footer p {
 .service-nav a:hover {
     background-color: #005bb5;
 }
+
+.service-nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
