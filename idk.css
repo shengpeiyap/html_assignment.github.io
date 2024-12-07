@@ -154,11 +154,6 @@ footer p {
         padding: 10px 0;
         z-index: 1000;
     }
-    
-    /* When the menu is toggled (showing), display the navigation links */
-    .nav-links.active {
-        display: flex;
-    }
     /* Show the hamburger menu icon */
     .menu-toggle {
         display: flex;
