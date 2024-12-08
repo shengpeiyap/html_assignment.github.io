@@ -25,11 +25,11 @@ backgroundAudio.play().then(() => {
 audioControl.addEventListener("click", () => {
     if (backgroundAudio.paused) {
         backgroundAudio.play();
-        audioIcon.src = "Speaker_Icon.png"; // Change to speaker icon
+        audioIcon.src = "img/Speaker_Icon.png"; // Change to speaker icon
         audioIcon.alt = "Playing Audio";    // Update alt text
     } else {
         backgroundAudio.pause();
-        audioIcon.src = "Mute_Icon.png";    // Change to mute icon
+        audioIcon.src = "img/Mute_Icon.png";    // Change to mute icon
         audioIcon.alt = "Muted Audio";     // Update alt text
     }
 });
