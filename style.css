@@ -147,7 +147,7 @@ nav {
         display: flex;
     }
     .audio-control {
-        margin-left: 20px; /* More space on mobile screens */
+        margin-left: 40px; /* More space on mobile screens */
     }
 }
 
