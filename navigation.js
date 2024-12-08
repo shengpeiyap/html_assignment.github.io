@@ -7,3 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.classList.toggle('active');
     });
 });
+
+document.getElementById("controller-btn").addEventListener("click", function () {
+    alert("Controller button clicked!");
+});
