@@ -146,6 +146,29 @@ nav {
     line-height: 1.8;
 }
 
+/* Frosted Glass Effect */
+.frosted-glass {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for frosted glass */
+    -webkit-backdrop-filter: blur(10px); /* Webkit support */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 10px; /* Rounded corners for elegance */
+    padding: 20px; /* Spacing inside the element */
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Frosted glass for the entire main wrapper */
+.main-wrapper {
+    background: rgba(255, 255, 255, 0.1); /* Slightly darker transparency */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 /* Main Content Styling */
 .main-content {
     max-width: 1200px;
