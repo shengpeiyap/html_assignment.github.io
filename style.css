@@ -151,7 +151,7 @@ nav {
         margin-left: 20px; /* More space on mobile screens */
     }
     .pricing-content {
-        flex-direction: column; /* Stacks items vertically */
+        flex-direction: column; /* Stacks items vertically on smaller screens */
     }
 
     .price-option {
@@ -316,15 +316,15 @@ nav {
 /* Pricing Content Section */
 .pricing-content {
     display: flex; /* Ensures horizontal layout */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 20px; /* Adds space between pricing options */
-    justify-content: center; /* Centers items horizontally */
+    justify-content: flex-start; /* Aligns items to the left */
     align-items: flex-start; /* Aligns items to the top */
+    flex-wrap: nowrap; /* Prevents wrapping, keeps items in a single row */
 }
 
 .price-option {
-    flex: 1 1 calc(33.333% - 20px); /* Flexible width with space for gap */
-    margin-bottom: 20px; /* Additional margin for better spacing */
+    flex: 1 1 calc(33.333% - 20px); /* Ensures 3 items per row */
+    margin-bottom: 20px; /* Adds space between rows (if needed) */
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -334,6 +334,7 @@ nav {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Hover effect for price options */
 .price-option:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
