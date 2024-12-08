@@ -8,6 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.getElementById("controller-btn").addEventListener("click", function () {
-    alert("Controller button clicked!");
+// Select the audio and icon elements
+const audioControl = document.getElementById("audio-control");
+const backgroundAudio = document.getElementById("background-audio");
+
+// Add event listener for click
+audioControl.addEventListener("click", () => {
+    if (backgroundAudio.paused) {
+        backgroundAudio.play();
+        audioControl.classList.remove("play"); // Show pause icon
+    } else {
+        backgroundAudio.pause();
+        audioControl.classList.add("play"); // Show play icon
+    }
 });
