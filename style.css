@@ -103,49 +103,15 @@ nav {
     transition: all 0.3s ease; /* Smooth animation */
 }
 
+/* Removing default icons */
 .audio-control::before,
 .audio-control::after {
-    content: '';
-    width: 8px;
-    height: 16px;
-    background-color: #333;
-    position: absolute;
-    border-radius: 2px;
+    content: none; /* Disables the icon */
 }
 
-/* Default "Pause" icon (two bars) */
-.audio-control::before {
-    left: 8px;
-}
-.audio-control::after {
-    right: 8px;
-}
-
-/* "Play" icon (triangle) */
-.audio-control.playing::before {
-    content: '\1F50A'; /* Unicode for speaker */
-    font-size: 16px;
-    color: #333;
-}
-
-.audio-control.play::after {
-    content: none;
-}
-
-/* Default "Muted" icon (speaker with line through it) */
-.audio-control.muted::before {
-    content: '';
-    width: 16px;
-    height: 16px;
-    background-color: #333;
-    position: absolute;
-    top: 7px;
-    left: 5px;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Slash through the speaker */
-}
-
+/* Optional: If you want to add a custom image instead */
 .audio-control img {
-    width: 30px; /* Adjust size */
+    width: 30px;
     height: 30px;
     cursor: pointer;
     transition: transform 0.3s ease;
