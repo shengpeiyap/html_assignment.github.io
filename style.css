@@ -89,36 +89,28 @@ nav {
 
 /* Adjustments to .audio-control */
 .audio-control {
-    width: 30px;
-    height: 30px;
-    position: relative;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
     border-radius: 50%;
-    margin-left: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease; /* Smooth animation */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Removing default icons */
-.audio-control::before,
-.audio-control::after {
-    content: none; /* Disables the icon */
+.audio-control:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Optional: If you want to add a custom image instead */
+/* Image styles */
 .audio-control img {
     width: 30px;
     height: 30px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.audio-control img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transition: opacity 0.3s ease;
 }
 
 /* Responsive Design: Mobile Styles */
