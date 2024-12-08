@@ -151,7 +151,7 @@ nav {
         margin-left: 20px; /* More space on mobile screens */
     }
     .pricing-content {
-        flex-direction: column; /* Stacks items vertically on smaller screens */
+        flex-direction: column; /* Stack the items vertically */
     }
 
     .price-option {
