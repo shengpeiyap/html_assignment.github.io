@@ -158,6 +158,10 @@ nav {
         flex: 1 1 100%; /* Full width for smaller screens */
         margin-bottom: 20px;
     }
+    .pricing-image {
+        width: 80%; /* Optional: Adjust image width on smaller screens */
+        margin: 15px auto; /* Centers the image horizontally */
+    }
 }
 
 
@@ -313,27 +317,116 @@ nav {
     border-bottom: 2px solid #fff;
 }
 
+/* General Styles for the Cleaning Sections */
+.cleaning-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cleaning-part {
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: space-between; /* Push the image to the right */
+    align-items: center; /* Vertically center both content and image */
+    gap: 20px; /* Add space between the description and the image */
+    padding: 20px; /* Optional: Add padding for better appearance */
+}
+
+.cleaning-part img {
+    width: 100%;
+    border-radius: 20px;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    flex: 1; /* Allow the description to take up remaining space */
+}
+
+.service-image {
+    max-width: 200px; /* Adjust the image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.service-description h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.service-description ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-description li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.service-description li::before {
+    content: "✔";         /* The checkmark symbol */
+    color: black;          /* Set the color of the checkmark */
+    font-size: 20px;       /* Set the size of the checkmark */
+    margin-right: 10px;    /* Space between the checkmark and the list item */
+}
+
 /* Pricing Content Section */
 .pricing-content {
     margin-top: 50px; /* Adjust this value as needed */
     display: flex;
     gap: 20px;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Align items to the left */
+    align-items: stretch; /* Align items at the top */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.with-image {
+    display: flex;
+    justify-content: space-between; /* Pushes text and image to opposite sides */
+    align-items: center; /* Vertically centers the image and text */
+    gap: 20px; /* Adds spacing between the text and image */
+}
+
+.image-content {
+    flex: 1; /* Allocates less space to the image section */
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the right side */
+    align-items: center; /* Centers the image vertically */
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto; /* Ensures the image scales proportionally */
+    border-radius: 8px; /* Adds rounded corners */
 }
 
 /* Price Option Box */
 .price-option {
     flex: 1 1 calc(25% - 20px); /* Ensures four items per row (adjust for your design) */
+    display: flex; /* Enable flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between content */
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    align-items: center; /* Center align content */
+    text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative; /* To position the "better deal" label */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for effect */
+    min-height: 400px; /* Set a minimum height for uniformity */
+}
+
+.price-option img {
+    max-width: 100px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: auto; /* Push the image to the bottom */
 }
 
 /* Hover effect for price options */
@@ -355,8 +448,37 @@ nav {
 
 .pricing-section {
     padding-top: 25px; /* Adds space inside the container */
-    pandding-bottom: 25px
+    padding-bottom: 25px;
 }
+
+.pricing-image {
+    width: 100px;  /* Set a fixed width for all images */
+    height: 100px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    margin-top: 15px; /* Space between the description and the image */
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+    display: block; /* Ensures the image is a block-level element */
+    margin-left: auto;
+    margin-right: auto; /* Centers the image horizontally */
+}
+
+.price-option ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.price-option li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.price-option li::before {
+    content: "✔";         /* The checkmark symbol */
+    color: black;          /* Set the color of the checkmark */
+    font-size: 20px;       /* Set the size of the checkmark */
+    margin-right: 10px;    /* Space between the checkmark and the list item */
+}
+
 
 /* Contact Section */
 .contact-container {
