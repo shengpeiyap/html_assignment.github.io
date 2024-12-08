@@ -315,11 +315,12 @@ nav {
 
 /* Pricing Content Section */
 .pricing-content {
-    display: flex; /* Align the items horizontally */
-    gap: 20px; /* Space between pricing options */
-    justify-content: space-between; /* Distribute the space evenly */
-    align-items: flex-start; /* Align items to the top */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-top: 50px; /* Adjust this value as needed */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 /* Price Option Box */
