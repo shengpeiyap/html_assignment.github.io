@@ -87,7 +87,7 @@ nav {
     background-color: white;
 }
 
-/* Audio Control Icon */
+/* Adjustments to .audio-control */
 .audio-control {
     width: 30px;
     height: 30px;
@@ -100,29 +100,28 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease; /* Smooth animation */
 }
 
-.audio-control::before {
-    content: '';
-    width: 8px;
-    height: 16px;
-    background-color: #333;
-    position: absolute;
-    left: 8px;
-    border-radius: 2px;
-}
-
+.audio-control::before,
 .audio-control::after {
     content: '';
     width: 8px;
     height: 16px;
     background-color: #333;
     position: absolute;
-    right: 8px;
     border-radius: 2px;
 }
 
-/* Play Icon Styling */
+/* Default "Pause" icon (two bars) */
+.audio-control::before {
+    left: 8px;
+}
+.audio-control::after {
+    right: 8px;
+}
+
+/* "Play" icon (triangle) */
 .audio-control.play::before {
     content: '';
     width: 0;
@@ -137,7 +136,6 @@ nav {
 .audio-control.play::after {
     content: none;
 }
-
 /* Responsive Design: Mobile Styles */
 @media (max-width: 768px) {
     /* Responsive Navigation Styling */
