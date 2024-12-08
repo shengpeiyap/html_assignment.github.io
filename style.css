@@ -324,6 +324,10 @@ nav {
 }
 
 /* Price Option Box */
+.pricing-section {
+    padding-top: 50px; /* Adds space inside the container */
+}
+
 .price-option {
     flex: 1 1 calc(33.333% - 20px); /* Ensures three items per row */
     padding: 20px;
