@@ -318,19 +318,14 @@ nav {
     margin-top: 50px; /* Adjust this value as needed */
     display: flex;
     gap: 20px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 /* Price Option Box */
-.pricing-section {
-    padding-top: 25px; /* Adds space inside the container */
-    pandding-bottom: 25px
-}
-
 .price-option {
-    flex: 1 1 calc(33.333% - 20px); /* Ensures three items per row */
+    flex: 1 1 calc(25% - 20px); /* Ensures four items per row (adjust for your design) */
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -356,6 +351,11 @@ nav {
 .price-option p {
     font-size: 1.2rem;
     color: #555;
+}
+
+.pricing-section {
+    padding-top: 25px; /* Adds space inside the container */
+    pandding-bottom: 25px
 }
 
 /* Contact Section */
