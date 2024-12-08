@@ -315,23 +315,24 @@ nav {
 
 /* Pricing Content Section */
 .pricing-content {
-    display: flex; /* Ensures horizontal layout */
-    gap: 20px; /* Adds space between pricing options */
-    justify-content: flex-start; /* Aligns items to the left */
-    align-items: flex-start; /* Aligns items to the top */
-    flex-wrap: nowrap; /* Prevents wrapping, keeps items in a single row */
+    display: flex; /* Align the items horizontally */
+    gap: 20px; /* Space between pricing options */
+    justify-content: space-between; /* Distribute the space evenly */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
+/* Price Option Box */
 .price-option {
-    flex: 1 1 calc(33.333% - 20px); /* Ensures 3 items per row */
-    margin-bottom: 20px; /* Adds space between rows (if needed) */
+    flex: 1 1 calc(33.333% - 20px); /* Ensures three items per row */
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* To position the "better deal" label */
 }
 
 /* Hover effect for price options */
@@ -349,6 +350,19 @@ nav {
 .price-option p {
     font-size: 1.2rem;
     color: #555;
+}
+
+/* Highlighted Better Deal */
+.price-option .better-deal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Contact Section */
