@@ -87,8 +87,8 @@ nav {
     background-color: white;
 }
 
-/* CSS Icon (Gear Shape Example) */
-.css-icon {
+/* Audio Control Icon */
+.audio-control {
     width: 30px;
     height: 30px;
     position: relative;
@@ -97,38 +97,45 @@ nav {
     margin-left: 20px;
     cursor: pointer;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Gear Spokes */
-.css-icon::before,
-.css-icon::after {
-    content: "";
+.audio-control::before {
+    content: '';
+    width: 8px;
+    height: 16px;
+    background-color: #333;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 24px;
-    height: 6px;
-    background-color: #fff;
-    transform: translate(-50%, -50%) rotate(0deg);
+    left: 8px;
     border-radius: 2px;
 }
 
-.css-icon::before {
-    transform: translate(-50%, -50%) rotate(45deg);
+.audio-control::after {
+    content: '';
+    width: 8px;
+    height: 16px;
+    background-color: #333;
+    position: absolute;
+    right: 8px;
+    border-radius: 2px;
 }
 
-.css-icon::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
+/* Play Icon Styling */
+.audio-control.play::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid #333;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    position: unset;
+    left: unset;
 }
 
-/* Hover Effect */
-.css-icon:hover {
-    background-color: #5f5e59;
-}
-
-.css-icon:hover::before,
-.css-icon:hover::after {
-    background-color: #5f5e59;
+.audio-control.play::after {
+    content: none;
 }
 
 /* Responsive Design: Mobile Styles */
