@@ -38,6 +38,11 @@ header a {
     text-decoration: none;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 /* Navigation Styling */
 .nav-links {
     display: flex;
@@ -280,6 +285,7 @@ footer p {
     background-color: #0073e6;
     padding: 20px 0;
     text-align: center;
+    align-items: center;
 }
 
 .service-nav ul {
