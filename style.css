@@ -146,6 +146,21 @@ nav {
     line-height: 1.8;
 }
 
+.video-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+.video-section video {
+    width: 80%; /* Adjust video width */
+    max-width: 800px;
+    height: auto;
+    border: 2px solid #0073e6; /* Optional: Add a border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
 /* Main Content Styling */
 .main-content {
     max-width: 1200px;
