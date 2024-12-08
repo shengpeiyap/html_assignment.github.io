@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             audioIcon.alt = 'Muted';
             audioControl.setAttribute('aria-label', 'Unmute Audio');
         } else {
-            audioIcon.src = 'img/Play_Icon.png'; // Path to the play icon
+            audioIcon.src = 'img/Speaker_Icon.png'; // Path to the play icon
             audioIcon.alt = 'Playing';
             audioControl.setAttribute('aria-label', 'Mute Audio');
         }
