@@ -40,8 +40,9 @@ header a {
 
 /* Navigation Styling */
 nav {
-    display: flex
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .nav-links {
     display: flex;
