@@ -150,6 +150,9 @@ nav {
     .audio-control {
         margin-left: 20px; /* More space on mobile screens */
     }
+    .price-option {
+        width: 90%; /* Full width with some margin */
+    }
 }
 
 
