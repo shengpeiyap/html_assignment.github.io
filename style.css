@@ -146,6 +146,9 @@ nav {
     .nav-links.active {
         display: flex;
     }
+    .audio-control {
+        margin-left: 20px; /* More space on mobile screens */
+    }
 }
 
 
