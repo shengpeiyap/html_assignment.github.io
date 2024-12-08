@@ -325,7 +325,8 @@ nav {
 
 /* Price Option Box */
 .pricing-section {
-    padding-top: 50px; /* Adds space inside the container */
+    padding-top: 25px; /* Adds space inside the container */
+    pandding-bottom: 25px
 }
 
 .price-option {
