@@ -34,6 +34,10 @@ header h1:hover {
     color: #5f5e59;
 }
 
+header a {
+    text-decoration: none;
+}
+
 /* Navigation Styling */
 nav {
     display: flex
