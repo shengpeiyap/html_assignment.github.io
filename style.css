@@ -86,6 +86,24 @@ nav {
     background-color: white;
 }
 
+/* Controller Button */
+.controller-button {
+    background-color: #0073e6;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px; /* Add spacing from the contact link */
+    transition: background-color 0.3s ease;
+}
+
+.controller-button:hover {
+    background-color: #005bb5;
+}
+
 /* Responsive Design: Mobile Styles */
 @media (max-width: 768px) {
     /* Responsive Navigation Styling */
