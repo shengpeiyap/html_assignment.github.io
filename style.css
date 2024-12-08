@@ -42,7 +42,6 @@ header a {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .nav-links {
     display: flex;
