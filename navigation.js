@@ -9,27 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Select the audio, control div, and icon image
-const audioControl = document.getElementById("audio-control");
-const audioIcon = document.getElementById("audio-icon");
-const backgroundAudio = document.getElementById("background-audio");
+document.addEventListener('DOMContentLoaded', () => {
+    const audioControl = document.getElementById('audio-control');
+    const audioIcon = document.getElementById('audio-icon');
+    let isMuted = true; // Initial state
 
-// Ensure the audio plays automatically if the browser permits
-backgroundAudio.play().then(() => {
-    backgroundAudio.muted = false; // Unmute audio
-}).catch(() => {
-    console.log("Autoplay blocked, waiting for user interaction.");
-});
+    audioControl.addEventListener('click', () => {
+        isMuted = !isMuted;
 
-// Add click event listener to toggle play/pause
-audioControl.addEventListener("click", () => {
-    if (backgroundAudio.paused) {
-        backgroundAudio.play();
-        audioIcon.src = "img/Speaker_Icon.png"; // Change to speaker icon
-        audioIcon.alt = "Playing Audio";    // Update alt text
-    } else {
-        backgroundAudio.pause();
-        audioIcon.src = "img/Mute_Icon.png";    // Change to mute icon
-        audioIcon.alt = "Muted Audio";     // Update alt text
-    }
+        if (isMuted) {
+            audioIcon.src = 'img/Mute_Icon.png'; // Path to the mute icon
+            audioIcon.alt = 'Muted';
+            audioControl.setAttribute('aria-label', 'Unmute Audio');
+        } else {
+            audioIcon.src = 'img/Play_Icon.png'; // Path to the play icon
+            audioIcon.alt = 'Playing';
+            audioControl.setAttribute('aria-label', 'Mute Audio');
+        }
+    });
 });
