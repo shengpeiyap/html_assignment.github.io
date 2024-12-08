@@ -1,4 +1,3 @@
-// JavaScript to toggle the mobile navigation menu
 document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu toggle
     const menuToggle = document.getElementById('menu-toggle');
@@ -12,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', () => {
     const audioControl = document.getElementById('audio-control');
     const audioIcon = document.getElementById('audio-icon');
+    const backgroundAudio = document.getElementById('background-audio'); // Reference to the background audio element
     let isMuted = true; // Initial state
 
     audioControl.addEventListener('click', () => {
@@ -21,10 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             audioIcon.src = 'img/Mute_Icon.png'; // Path to the mute icon
             audioIcon.alt = 'Muted';
             audioControl.setAttribute('aria-label', 'Unmute Audio');
+            backgroundAudio.muted = true; // Mute the background audio
         } else {
             audioIcon.src = 'img/Speaker_Icon.png'; // Path to the play icon
             audioIcon.alt = 'Playing';
             audioControl.setAttribute('aria-label', 'Mute Audio');
+            backgroundAudio.muted = false; // Unmute the background audio
         }
     });
 });
