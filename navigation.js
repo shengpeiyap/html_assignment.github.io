@@ -9,28 +9,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-   // Select the audio and icon elements
+// Select the audio, control div, and icon image
 const audioControl = document.getElementById("audio-control");
+const audioIcon = document.getElementById("audio-icon");
 const backgroundAudio = document.getElementById("background-audio");
 
-// Ensure audio plays automatically with muted
+// Ensure the audio plays automatically if the browser permits
 backgroundAudio.play().then(() => {
-    // On successful autoplay, unmute the audio
-    backgroundAudio.muted = false;
+    backgroundAudio.muted = false; // Unmute audio
 }).catch(() => {
-    // If autoplay fails, the user needs to click the button to start audio
-    console.log("Autoplay was blocked, waiting for user interaction.");
+    console.log("Autoplay blocked, waiting for user interaction.");
 });
 
-// Add event listener for click
+// Add click event listener to toggle play/pause
 audioControl.addEventListener("click", () => {
     if (backgroundAudio.paused) {
         backgroundAudio.play();
-        audioControl.classList.remove("muted"); // Show sound icon
-        audioControl.classList.add("playing");  // Show playing icon
+        audioIcon.src = "Speaker_Icon.png"; // Change to speaker icon
+        audioIcon.alt = "Playing Audio";    // Update alt text
     } else {
         backgroundAudio.pause();
-        audioControl.classList.remove("playing"); // Show muted icon
-        audioControl.classList.add("muted");      // Show muted icon
+        audioIcon.src = "Mute_Icon.png";    // Change to mute icon
+        audioIcon.alt = "Muted Audio";     // Update alt text
     }
 });
