@@ -38,12 +38,12 @@ header a {
     text-decoration: none;
 }
 
+/* Navigation Styling */
 nav {
     display: flex;
     align-items: center;
 }
 
-/* Navigation Styling */
 .nav-links {
     display: flex;
     list-style: none;
@@ -73,21 +73,38 @@ nav {
     border-bottom: 2px solid #fff;
 }
 
-/* Hamburger Menu Styles */
+/* button styles */
+button.menu-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
+    justify-content: space-around;
+    width: 30px; 
+    height: 21px;
 }
 
 .menu-toggle .bar {
-    width: 30px;
-    height: 4px;
-    background-color: white;
+    width: 100%;
+    height: 4px; 
+    background-color: #ffffff;
+    border-radius: 2px;
 }
 
-/* Adjustments to .audio-control */
+.menu-toggle:hover .bar {
+    background-color: #555; 
+}
+
+.menu-toggle:focus {
+    outline: none; 
+}
+
+/* Audio control button */
 .audio-control {
     width: 50px;
     height: 50px;
@@ -106,33 +123,27 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Image styles */
 .audio-control img {
     width: 30px;
     height: 30px;
     transition: opacity 0.3s ease;
 }
 
-/* Responsive Design: Mobile Styles */
+/* Mobile style */
 @media (max-width: 768px) {
-    /* Responsive Navigation Styling */
+    /* Navigation */
     .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
         background-color: #333;
         position: absolute;
-        top: 60px;
+        top: 80px;
         left: 0;
         padding: 10px 0;
         z-index: 1000;
     }
-    /* Show the hamburger menu icon */
-    .menu-toggle {
-        display: flex;
-    }
 
-    /* Style for individual list items in mobile view */
     .nav-links li {
         margin: 15px 0;
         text-align: center;
@@ -143,27 +154,33 @@ nav {
         color: white;
     }
 
-    /* Make nav-links visible when active */
     .nav-links.active {
         display: flex;
     }
-    .audio-control {
-        margin-left: 20px; /* More space on mobile screens */
+
+    .menu-toggle {
+        display: flex;
     }
+
+    /* Audio button style */
+    .audio-control {
+        margin-left: 20px;
+    }
+
+    /* Pricing style */
     .pricing-content {
-        flex-direction: column; /* Stack the items vertically */
+        flex-direction: column;
     }
 
     .price-option {
-        flex: 1 1 100%; /* Full width for smaller screens */
+        flex: 1 1 100%;
         margin-bottom: 20px;
     }
     .pricing-image {
-        width: 80%; /* Optional: Adjust image width on smaller screens */
-        margin: 15px auto; /* Centers the image horizontally */
+        width: 80%;
+        margin: 15px auto; 
     }
 }
-
 
 /* Hero Section */
 .hero {
@@ -188,22 +205,24 @@ nav {
     line-height: 1.8;
 }
 
+
+/*video for index.html*/
 .video-section {
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9; /* Optional: Add a background color */
+    background-color: #f9f9f9; 
 }
 
 .video-section video {
-    width: 80%; /* Adjust video width */
+    width: 80%; 
     max-width: 800px;
     height: auto;
-    border: 2px solid #0073e6; /* Optional: Add a border */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    border: 2px solid #0073e6; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Main Content Styling */
+/* Main Content */
 .main-content {
     max-width: 1200px;
     margin: 20px auto;
@@ -223,7 +242,8 @@ nav {
     line-height: 1.8;
 }
 
-/* About Us Section */
+/* about.html */
+/* About Us */
 .about-us, .our-mission, .our-team, .our-values {
     background-color: #fff;
     margin: 20px auto;
@@ -238,7 +258,6 @@ nav {
     margin-bottom: 20px;
 }
 
-/* Team Members */
 .our-team .team-members {
     display: flex;
     justify-content: space-around;
@@ -251,9 +270,10 @@ nav {
 }
 
 .our-team .team-member img {
-    width: 100%;
-    border-radius: 50%;
-    max-width: 200px;
+    width: 150px;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
     margin-bottom: 10px;
 }
 
@@ -267,7 +287,6 @@ nav {
     color: #777;
 }
 
-/* Values Section */
 .our-values ul {
     list-style: none;
     padding: 0;
@@ -278,7 +297,8 @@ nav {
     margin-bottom: 10px;
 }
 
-/* Services Navigation Section */
+/*services.html, basic-home-cleaning-services.html, move-in-out-cleaning-services.html*/
+/* Services Navigation */
 .service-nav {
     background-color: #0073e6;
     padding: 20px 0;
@@ -317,7 +337,7 @@ nav {
     border-bottom: 2px solid #fff;
 }
 
-/* General Styles for the Cleaning Sections */
+/* Cleaning Sections */
 .cleaning-section {
     display: flex;
     flex-direction: column;
@@ -328,11 +348,11 @@ nav {
 }
 
 .cleaning-part {
-    display: flex; /* Enable flexbox for alignment */
-    justify-content: space-between; /* Push the image to the right */
-    align-items: center; /* Vertically center both content and image */
-    gap: 20px; /* Add space between the description and the image */
-    padding: 20px; /* Optional: Add padding for better appearance */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 .cleaning-part img {
@@ -343,12 +363,12 @@ nav {
 }
 
 .service-description {
-    flex: 1; /* Allow the description to take up remaining space */
+    flex: 1; 
 }
 
 .service-image {
-    max-width: 200px; /* Adjust the image size */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; 
+    height: auto; 
 }
 
 .service-description h4 {
@@ -368,68 +388,48 @@ nav {
 }
 
 .service-description li::before {
-    content: "✔";         /* The checkmark symbol */
-    color: black;          /* Set the color of the checkmark */
-    font-size: 20px;       /* Set the size of the checkmark */
-    margin-right: 10px;    /* Space between the checkmark and the list item */
+    content: "✔";  
+    color: black;  
+    font-size: 20px; 
+    margin-right: 10px; 
 }
 
-/* Pricing Content Section */
+/*pricing.html, basic-home-cleaning-prices.html, move-in-out-cleaning-preces*/
+/* Pricing Content */
 .pricing-content {
-    margin-top: 50px; /* Adjust this value as needed */
+    margin-top: 50px; 
     display: flex;
     gap: 20px;
-    justify-content: space-between; /* Align items to the left */
-    align-items: stretch; /* Align items at the top */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; 
+    align-items: stretch; 
+    flex-wrap: wrap; 
 }
 
-.with-image {
-    display: flex;
-    justify-content: space-between; /* Pushes text and image to opposite sides */
-    align-items: center; /* Vertically centers the image and text */
-    gap: 20px; /* Adds spacing between the text and image */
-}
-
-.image-content {
-    flex: 1; /* Allocates less space to the image section */
-    display: flex;
-    justify-content: flex-end; /* Aligns the image to the right side */
-    align-items: center; /* Centers the image vertically */
-}
-
-.image-content img {
-    max-width: 100%;
-    height: auto; /* Ensures the image scales proportionally */
-    border-radius: 8px; /* Adds rounded corners */
-}
-
-/* Price Option Box */
+/* Price Option */
 .price-option {
-    flex: 1 1 calc(25% - 20px); /* Ensures four items per row (adjust for your design) */
-    display: flex; /* Enable flexbox for alignment */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: space-between; /* Space between content */
+    flex: 1 1 calc(25% - 20px); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    align-items: center; /* Center align content */
+    align-items: center; 
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
-    position: relative; /* To position the "better deal" label */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for effect */
-    min-height: 400px; /* Set a minimum height for uniformity */
+    position: relative; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    min-height: 400px; 
 }
 
 .price-option img {
-    max-width: 100px; /* Adjust image size */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: auto; /* Push the image to the bottom */
+    max-width: 100px; 
+    height: auto; 
+    margin-top: auto; 
 }
 
-/* Hover effect for price options */
 .price-option:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
@@ -447,19 +447,19 @@ nav {
 }
 
 .pricing-section {
-    padding-top: 25px; /* Adds space inside the container */
+    padding-top: 25px; 
     padding-bottom: 25px;
 }
 
 .pricing-image {
-    width: 100px;  /* Set a fixed width for all images */
-    height: 100px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensures the image covers the box without distortion */
-    margin-top: 15px; /* Space between the description and the image */
-    border-radius: 8px; /* Optional: Adds rounded corners to the image */
-    display: block; /* Ensures the image is a block-level element */
+    width: 100px;  
+    height: 100px; 
+    object-fit: cover; 
+    margin-top: 15px; 
+    border-radius: 8px; 
+    display: block; 
     margin-left: auto;
-    margin-right: auto; /* Centers the image horizontally */
+    margin-right: auto; 
 }
 
 .price-option ul {
@@ -473,13 +473,13 @@ nav {
 }
 
 .price-option li::before {
-    content: "✔";         /* The checkmark symbol */
-    color: black;          /* Set the color of the checkmark */
-    font-size: 20px;       /* Set the size of the checkmark */
-    margin-right: 10px;    /* Space between the checkmark and the list item */
+    content: "✔";  
+    color: black;   
+    font-size: 20px;  
+    margin-right: 10px;  
 }
 
-
+/*contact.html*/
 /* Contact Section */
 .contact-container {
     display: flex;
@@ -516,7 +516,7 @@ nav {
     border-radius: 10px;
 }
 
-/* Contact Form Styling */
+/* Contact form style */
 .contact-form {
     width: 55%;
 }
@@ -569,36 +569,7 @@ nav {
     background-color: #005bb5;
 }
 
-/* Confirmation Section */
-.confirmation-container {
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 30px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.confirmation-message h2 {
-    font-size: 2rem;
-    color: #0073e6;
-    margin-bottom: 20px;
-}
-
-.confirmation-message p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.confirmation-image {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
+/* form.html */
 /* Confirmation Section */
 .confirmation-container {
     margin: 40px auto;
@@ -656,7 +627,7 @@ nav {
     color: #0073e6;
 }
 
-/* Next Steps Section */
+/* Next Steps */
 .next-steps {
     margin-top: 40px;
 }

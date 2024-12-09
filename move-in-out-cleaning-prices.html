@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico">
-    <title>Basic Home Cleaning Prices - House Cleaning Service</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="navigation.js" defer></script>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <a href="index.html"><h1>House Cleaning Service</h1></a>
-        <nav>
-            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-links" id="nav-links" aria-label="Main Navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html" class="active">Pricing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="audio-control" id="audio-control" aria-label="Toggle Audio">
-                <img id="audio-icon" src="img/Mute_Icon.png" alt="Mute">
-            </div>
-        </nav>
-    </header>
-    
-    <!-- Background Sound -->
-    <audio id="background-audio" autoplay loop>
-        <source src="img/audio.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-    
-    <!-- Hero Section -->
-    <div class="hero">
-        <h2>Basic Home Cleaning Pricing</h2>
-        <p>Choose your cleaning service below to see the pricing details.</p>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico">
+        <title>Basic Home Cleaning Prices - House Cleaning Service</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="navigation.js" defer></script>
+    </head>
 
-    <!-- Services Navigation -->
-    <nav class="service-nav">
-        <ul>
-            <li><a href="basic-home-cleaning-prices.html">Basic Home Cleaning</a></li>
-            <li><a href="move-in-out-cleaning-prices.html" class="active">Move In/Out Cleaning</a></li>
-        </ul>
-    </nav>
+    <body>
+
+        <!-- Header -->
+        <header>
+            <a href="index.html"><h1>House Cleaning Service</h1></a>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links" aria-label="Main Navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="audio-control" id="audio-control" aria-label="Toggle Audio">
+                    <img id="audio-icon" src="img/Mute_Icon.png" alt="Mute">
+                </button>
+            </nav>
+        </header>
+        
+        <!-- Background Sound -->
+        <audio id="background-audio" autoplay loop>
+            <source src="img/audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <!-- Hero -->
+        <div class="hero">
+            <h2>Basic Home Cleaning Pricing</h2>
+            <p>Choose your cleaning service below to see the pricing details.</p>
+        </div>
+
+        <!-- Prices Navigation -->
+        <nav class="service-nav">
+            <ul>
+                <li><a href="basic-home-cleaning-prices.html">Basic Home Cleaning</a></li>
+                <li><a href="move-in-out-cleaning-prices.html" class="active">Move In/Out Cleaning</a></li>
+            </ul>
+        </nav>
+
         <section class="pricing-section">
             <div class="pricing-content">
+
                 <div class="price-option">
                     <h4>Small Apartment/Studios</h4>
                     <p>Perfect for smaller spaces with minimal cleaning requirements.</p>
-                    <p>RM200.00</p>
+                    <p><strong>RM200.00</strong></p>
                     <ul>
                         <li>Up to 1000 sqft</li>
                         <li>2 cleaners, 3 hours</li>
@@ -64,11 +68,11 @@
                     </ul>
                     <img src="img/Studio.png" alt="Studio Image" class="pricing-image">
                 </div>
-    
+        
                 <div class="price-option">
                     <h4>Apartments/Condos</h4>
                     <p>Comprehensive cleaning for apartments and condos.</p>
-                    <p>RM300.00</p>
+                    <p><strong>RM300.00</strong></p>
                     <ul>
                         <li>1000 sqft - 1799 sqft</li>
                         <li>2 cleaners, 5 hours</li>
@@ -77,11 +81,11 @@
                     </ul>
                     <img src="img/apartment.png" alt="Apartment Image" class="pricing-image">
                 </div>
-    
+        
                 <div class="price-option">
                     <h4>Medium-sized Houses</h4>
                     <p>Ideal for medium homes, including multiple rooms and spaces.</p>
-                    <p>RM400.00</p>
+                    <p><strong>RM400.00</strong></p>
                     <ul>
                         <li>1800 sqft - 2499 sqft</li>
                         <li>3 cleaners, 6 hours</li>
@@ -90,11 +94,11 @@
                     </ul>
                     <img src="img/medium-house.png" alt="Medium House Image" class="pricing-image">
                 </div>
-    
+        
                 <div class="price-option">
                     <h4>Larger Houses</h4>
                     <p>Thorough cleaning for large houses or multi-level homes.</p>
-                    <p>RM600.00</p>
+                    <p><strong>RM600.00</strong></p>
                     <ul>
                         <li>2500 sqft - 3500 sqft</li>
                         <li>4 cleaners, 8 hours</li>
@@ -103,12 +107,14 @@
                     </ul>
                     <img src="img/large-house.png" alt="Large House Image" class="pricing-image">
                 </div>
+
             </div>
         </section>
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 House Cleaning Service. All rights reserved.</p>
-    </footer>
-</body>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 House Cleaning Service. All rights reserved.</p>
+        </footer>
+        
+    </body>
 </html>

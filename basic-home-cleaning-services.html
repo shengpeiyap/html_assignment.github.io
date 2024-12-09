@@ -1,131 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico">
-    <title>Basic Home Cleaning Services - House Cleaning Service</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="navigation.js" defer></script>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <a href="index.html"><h1>House Cleaning Service</h1></a>
-        <nav>
-            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-links" id="nav-links" aria-label="Main Navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico">
+        <title>Basic Home Cleaning Services - House Cleaning Service</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="navigation.js" defer></script>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header>
+            <a href="index.html"><h1>House Cleaning Service</h1></a>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="nav-links" aria-label="Main Navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="audio-control" id="audio-control" aria-label="Toggle Audio">
+                    <img id="audio-icon" src="img/Mute_Icon.png" alt="Mute">
+                </button>
+            </nav>
+        </header>
+
+        <!-- Background Sound -->
+        <audio id="background-audio" autoplay loop>
+            <source src="img/audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Hero -->
+        <section class="hero">
+            <h2>Basic Home Cleaning Service</h2>
+            <p>Our basic home cleaning service is perfect for homeowners who want to keep their homes fresh and tidy on a regular basis.</p>
+        </section>
+
+        <!-- Services Navigation -->
+        <nav class="service-nav">
+            <ul>
+                <li><a href="basic-home-cleaning-services.html" class="active">Basic Home Cleaning</a></li>
+                <li><a href="move-in-out-cleaning-services.html">Move In/Out Cleaning</a></li>
             </ul>
-            <div class="audio-control" id="audio-control" aria-label="Toggle Audio">
-                <img id="audio-icon" src="img/Mute_Icon.png" alt="Mute">
-            </div>
         </nav>
-    </header>
-    <!-- Background Sound -->
-    <audio id="background-audio" autoplay loop>
-        <source src="img/audio.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Basic Home Cleaning Service</h2>
-        <p>Our basic home cleaning service is perfect for homeowners who want to keep their homes fresh and tidy on a regular basis.</p>
-    </section>
-
-    <!-- Services Navigation -->
-    <nav class="service-nav">
-        <ul>
-            <li><a href="basic-home-cleaning-services.html" class="active">Basic Home Cleaning</a></li>
-            <li><a href="move-in-out-cleaning-services.html">Move In/Out Cleaning</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Service Details -->
-    <div class="main-content">
-        <div class="cleaning-part">
-            <div class="service-description">
-                <h3>What’s Included:</h3>
-                <ul>
-                    <li>General cleaning of all rooms</li>
-                    <li>Dusting of surfaces, shelves, and furniture</li>
-                    <li>Vacuuming and mopping floors</li>
-                    <li>Kitchen and bathroom sanitation</li>
-                    <li>Trash removal and recycling</li>
-                </ul>
-            </div>
-            <img src="img/basic-home-cleaning-services.jpg" alt="basic cleaning image" class="service-image">
-        </div>
-    </div>
-   <!-- Cleaning Sections -->
-   <div class="main-content">
-    <section class="cleaning-section">
-        <div class="cleaning-part">
-            <img src="img/Living_room.png" alt="Living Room" class="service-image">
-            <div class="service-description">
-                <h4>Living Room:</h4>
-                <ul>
-                    <li>Dust and wipe clean all surfaces, including coffee tables and cabinets, leaving them spotless and gleaming.</li>
-                    <li>Organise furnitures and decoration items.</li>
-                    <li>Vacuum and mop floors.</li>
-                    <li>Clear all your rubbish bins.</li>
-                </ul>
+        
+        <!-- Service Details -->
+        <div class="main-content">
+            <div class="cleaning-part">
+                <div class="service-description">
+                    <h3>What’s Included:</h3>
+                    <ul>
+                        <li>General cleaning of all rooms</li>
+                        <li>Dusting of surfaces, shelves, and furniture</li>
+                        <li>Vacuuming and mopping floors</li>
+                        <li>Kitchen and bathroom sanitation</li>
+                        <li>Trash removal and recycling</li>
+                    </ul>
+                </div>
+                <img src="img/basic-home-cleaning-services.jpg" alt="basic cleaning image" class="service-image">
             </div>
         </div>
 
-        <div class="cleaning-part">
-            <img src="img/Bedroom.png" alt="Bedroom" class="service-image">
-            <div class="service-description">
-                <h4>Bedrooms:</h4>
-                <ul>
-                    <li>Change your bedsheet and make up your bed.</li>
-                    <li>Organise furniture, items and clothes.</li>
-                    <li>Dust and wipe clean all surfaces – cupboards and drawers.</li>
-                    <li>Vacuum and mop floors.</li>
-                    <li>Throw away rubbish.</li>
-                </ul>
-            </div>
+        <!-- Cleaning Sections -->
+        <div class="main-content">
+            <section class="cleaning-section">
+
+                <div class="cleaning-part">
+                    <img src="img/Living_room.png" alt="Living Room" class="service-image">
+                    <div class="service-description">
+                        <h4>Living Room:</h4>
+                        <ul>
+                            <li>Dust and wipe clean all surfaces, including coffee tables and cabinets, leaving them spotless and gleaming.</li>
+                            <li>Organise furnitures and decoration items.</li>
+                            <li>Vacuum and mop floors.</li>
+                            <li>Clear all your rubbish bins.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cleaning-part">
+                    <img src="img/Bedroom.png" alt="Bedroom" class="service-image">
+                    <div class="service-description">
+                        <h4>Bedrooms:</h4>
+                        <ul>
+                            <li>Change your bedsheet and make up your bed.</li>
+                            <li>Organise furniture, items and clothes.</li>
+                            <li>Dust and wipe clean all surfaces – cupboards and drawers.</li>
+                            <li>Vacuum and mop floors.</li>
+                            <li>Throw away rubbish.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cleaning-part">
+                    <img src="img/Bathroom.png" alt="Bathroom" class="service-image">
+                    <div class="service-description">
+                        <h4>Bathrooms:</h4>
+                        <ul>
+                            <li>Wipe clean all surfaces – counters and cabinets.</li>
+                            <li>Clean mirrors, bath, showers and shower doors.</li>
+                            <li>Scrub bathroom sinks and toilet bowl.</li>
+                            <li>Mop floors and throw away rubbish.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cleaning-part">
+                    <img src="img/Kitchen.png" alt="Kitchen" class="service-image">
+                    <div class="service-description">
+                        <h4>Kitchen:</h4>
+                        <ul>
+                            <li>Wash your dirty plates and kitchen utensils.</li>
+                            <li>Wipe clean all surfaces – kitchen cupboards, sinks, stove and countertops.</li>
+                            <li>Clean the outside of oven, microwave, and fridge.</li>
+                            <li>Vacuum and mop floors.</li>
+                            <li>Clear all your rubbish bins.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
         </div>
 
-        <div class="cleaning-part">
-            <img src="img/Bathroom.png" alt="Bathroom" class="service-image">
-            <div class="service-description">
-                <h4>Bathrooms:</h4>
-                <ul>
-                    <li>Wipe clean all surfaces – counters and cabinets.</li>
-                    <li>Clean mirrors, bath, showers and shower doors.</li>
-                    <li>Scrub bathroom sinks and toilet bowl.</li>
-                    <li>Mop floors and throw away rubbish.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="cleaning-part">
-            <img src="img/Kitchen.png" alt="Kitchen" class="service-image">
-            <div class="service-description">
-                <h4>Kitchen:</h4>
-                <ul>
-                    <li>Wash your dirty plates and kitchen utensils.</li>
-                    <li>Wipe clean all surfaces – kitchen cupboards, sinks, stove and countertops.</li>
-                    <li>Clean the outside of oven, microwave, and fridge.</li>
-                    <li>Vacuum and mop floors.</li>
-                    <li>Clear all your rubbish bins.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-</div>
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 House Cleaning Service. All rights reserved.</p>
-    </footer>
-</body>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 House Cleaning Service. All rights reserved.</p>
+        </footer>
+        
+    </body>
 </html>
